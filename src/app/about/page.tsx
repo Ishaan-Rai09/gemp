@@ -29,33 +29,6 @@ export default function AboutPage() {
     }
   ];
 
-  const teamMembers = [
-    {
-      name: 'Shashank Kainth',
-      role: 'Founder & Lead Producer (T REAL G)',
-      bio: 'With over 4 years of experience in the music industry, Shashank has worked with various artists across multiple genres. His unique approach to production has helped define The Gem Production\'s signature sound.',
-      image: '/images/producer-portrait.png'
-    },
-    {
-      name: 'Engineering Team',
-      role: 'Mixing & Recording Engineers',
-      bio: 'Our engineering team brings technical wizardry with golden ears. Their background in composition combined with cutting-edge technical knowledge makes them invaluable assets to any recording session.',
-      image: '/images/studio-engineer.png'
-    },
-    {
-      name: 'Creative Team',
-      role: 'Producers & Session Musicians',
-      bio: 'Having worked on numerous successful projects, our creative team brings their expertise in creating polished, radio-ready productions to every project at The Gem Production.',
-      image: '/images/creative-team.png'
-    },
-    {
-      name: 'Business Team',
-      role: 'Client Relations & Management',
-      bio: 'Our business team\'s attention to detail and dedication ensures that every client experience is smooth and productive, from initial contact through project completion.',
-      image: '/images/business-team.png'
-    }
-  ];
-
   return (
     <main className="relative min-h-screen">
       <Navbar />

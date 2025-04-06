@@ -1,15 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FaMicrophone, FaHeadphones, FaMusic, FaPen, FaGuitar, FaCompactDisc, FaPlay, FaSpotify, FaYoutube, FaInstagram } from 'react-icons/fa';
 
+// Define interfaces for better type checking
+interface PricingTier {
+  title: string;
+  price: string;
+  unit: string;
+  description: string;
+  icon: React.ReactNode;
+  features: string[];
+  popular: boolean;
+  ctaText: string;
+  link: string;
+  oldPrice?: string;
+  discount?: string;
+}
+
 export default function PricingPage() {
   const [activeTab, setActiveTab] = useState('individual');
   
-  const pricingTiers = {
+  const pricingTiers: Record<string, PricingTier[]> = {
     individual: [
       {
         title: 'Vocal Recording',
