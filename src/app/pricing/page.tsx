@@ -77,7 +77,7 @@ export default function PricingPage() {
     production: [
       {
         title: 'Music Production & Mixing Mastering',
-        price: '₹24,000',
+        price: '₹25,000',
         unit: '',
         oldPrice: '₹30,000',
         discount: '15% off',
@@ -385,7 +385,7 @@ export default function PricingPage() {
             </div>
             <div className="flex flex-wrap gap-4 max-w-md mx-auto mt-4">
               <motion.a
-                href="https://www.instagram.com/thegem.productions?igsh=MWJreTk4ajlnNG5qNw=="
+                href="https://www.instagram.com/trealg.official?igsh=NHlqam10ZWRvMW1j"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

@@ -350,7 +350,7 @@ export default function ServicesPage() {
                   <FaYoutube className="mr-2" /> <span>YouTube</span>
                 </motion.a>
                 <motion.a
-                  href="https://www.instagram.com/thegem.productions?igsh=MWJreTk4ajlnNG5qNw=="
+                  href="https://www.instagram.com/trealg.official?igsh=NHlqam10ZWRvMW1j"
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.03 }}

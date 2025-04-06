@@ -292,7 +292,7 @@ export default function ContactPage() {
               >
                 <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
                 <div className="flex flex-wrap gap-4 mt-4">
-                  <a href="https://www.instagram.com/thegem.productions?igsh=MWJreTk4ajlnNG5qNw==" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
+                  <a href="https://www.instagram.com/trealg.official?igsh=NHlqam10ZWRvMW1j" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
                     <FaInstagram />
                   </a>
                   <a href="https://youtube.com/@THEGEMPRODUCTIOS?si=leIMkP3KQ5u8LKQj" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
