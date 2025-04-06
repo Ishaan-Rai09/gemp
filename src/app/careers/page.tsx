@@ -417,13 +417,14 @@ export default function CareersPage() {
                                 </div>
                                 
                                 <div className="pt-4">
-                                  <motion.button 
-                                    className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300"
+                                  <motion.a 
+                                    href="/contact"
+                                    className="px-6 py-2.5 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 inline-block"
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.98 }}
                                   >
                                     Apply Now
-                                  </motion.button>
+                                  </motion.a>
                                 </div>
                               </div>
                             </motion.div>
@@ -446,13 +447,14 @@ export default function CareersPage() {
                 <p className="text-foreground/70 mb-6">
                   We're always looking for talented individuals. Send us your resume and let us know how you can contribute to The Gem Production team.
                 </p>
-                <motion.button 
-                  className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300"
+                <motion.a 
+                  href="/contact"
+                  className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 inline-block"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   Submit Your Resume
-                </motion.button>
+                </motion.a>
               </motion.div>
             </motion.div>
           </div>

@@ -83,9 +83,9 @@ export default function Services() {
           transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true, margin: "-100px" }}
         >
-          <button className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 font-medium">
+          <a href="/pricing" className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 font-medium inline-block">
             Get Full Pricing
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

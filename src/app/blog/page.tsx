@@ -254,18 +254,18 @@ export default function BlogPage() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  <button className="px-4 py-2 bg-background-light/50 text-foreground rounded-l-lg border border-foreground/20">
+                  <a href="/blog" className="px-4 py-2 bg-background-light/50 text-foreground rounded-l-lg border border-foreground/20">
                     Previous
-                  </button>
-                  <button className="px-4 py-2 bg-primary text-white border border-primary">
+                  </a>
+                  <a href="/blog" className="px-4 py-2 bg-primary text-white border border-primary">
                     1
-                  </button>
-                  <button className="px-4 py-2 bg-background-light/50 text-foreground border border-foreground/20">
+                  </a>
+                  <a href="/blog" className="px-4 py-2 bg-background-light/50 text-foreground border border-foreground/20">
                     2
-                  </button>
-                  <button className="px-4 py-2 bg-background-light/50 text-foreground rounded-r-lg border border-foreground/20">
+                  </a>
+                  <a href="/blog" className="px-4 py-2 bg-background-light/50 text-foreground rounded-r-lg border border-foreground/20">
                     Next
-                  </button>
+                  </a>
                 </motion.div>
               )}
             </motion.div>
@@ -288,13 +288,14 @@ export default function BlogPage() {
                 placeholder="Your email address" 
                 className="flex-1 bg-background border border-foreground/20 text-foreground rounded-full py-2 px-4 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary"
               />
-              <motion.button 
+              <motion.a 
+                href="/contact"
                 className="px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
                 Subscribe
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
         </div>

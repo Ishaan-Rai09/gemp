@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
-import { FaMusic, FaMicrophone, FaHome, FaUsers, FaEnvelope } from 'react-icons/fa';
+import { FaMusic, FaMicrophone, FaHome, FaUsers, FaEnvelope, FaDollarSign } from 'react-icons/fa';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,6 +24,7 @@ export default function Navbar() {
     { name: 'Services', href: '/services', icon: <FaMusic /> },
     { name: 'Studio', href: '/studio', icon: <FaMicrophone /> },
     { name: 'About', href: '/about', icon: <FaUsers /> },
+    { name: 'Pricing', href: '/pricing', icon: <FaDollarSign /> },
     { name: 'Contact', href: '/contact', icon: <FaEnvelope /> },
   ];
 

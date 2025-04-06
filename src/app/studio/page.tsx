@@ -129,10 +129,7 @@ export default function StudioPage() {
           >
             <div className="relative aspect-video w-full">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-secondary/30 to-accent/30 flex items-center justify-center">
-                <span className="text-6xl">🎵</span>
-                <p className="absolute bottom-4 left-4 text-white/80 text-sm bg-black/40 px-3 py-1 rounded-full">
-                  Studio tour video would appear here
-                </p>
+                <span className="text-6xl">🎧</span>
               </div>
             </div>
           </motion.div>
@@ -171,13 +168,14 @@ export default function StudioPage() {
                   <p className="text-sm text-foreground/70 mb-4">
                     Experience our studio in person. Schedule a tour with one of our engineers.
                   </p>
-                  <motion.button 
-                    className="w-full py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300"
+                  <motion.a
+                    href="/contact"
+                    className="w-full py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 inline-block text-center"
                     whileHover={{ scale: 1.03 }}
                     whileTap={{ scale: 0.98 }}
                   >
                     Schedule Tour
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -263,13 +261,14 @@ export default function StudioPage() {
             <p className="text-lg text-foreground/70 mb-8">
               Contact us today to book studio time and start creating your next masterpiece with The Gem Production.
             </p>
-            <motion.button 
-              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto"
+            <motion.a
+              href="/contact"
+              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
               Book Studio Time
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>

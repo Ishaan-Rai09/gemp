@@ -31,28 +31,28 @@ export default function AboutPage() {
 
   const teamMembers = [
     {
-      name: 'Alex Johnson',
-      role: 'Founder & Lead Producer',
-      bio: 'With over 15 years of experience in the music industry, Alex has worked with Grammy-winning artists across multiple genres. His unique approach to production has helped define The Gem Production\'s signature sound.',
-      image: '/images/team-1.jpg'
+      name: 'Shashank Kainth',
+      role: 'Founder & Lead Producer (T REAL G)',
+      bio: 'With over 4 years of experience in the music industry, Shashank has worked with various artists across multiple genres. His unique approach to production has helped define The Gem Production\'s signature sound.',
+      image: '/images/producer-portrait.png'
     },
     {
-      name: 'Sarah Williams',
-      role: 'Head Engineer',
-      bio: 'Sarah is a technical wizard with a golden ear. Her background in classical composition combined with cutting-edge technical knowledge makes her an invaluable asset to any recording session.',
-      image: '/images/team-2.jpg'
+      name: 'Engineering Team',
+      role: 'Mixing & Recording Engineers',
+      bio: 'Our engineering team brings technical wizardry with golden ears. Their background in composition combined with cutting-edge technical knowledge makes them invaluable assets to any recording session.',
+      image: '/images/studio-engineer.png'
     },
     {
-      name: 'Marcus Chen',
-      role: 'Mixing Engineer',
-      bio: 'Having mixed platinum records for major labels, Marcus brings his expertise in creating polished, radio-ready mixes to every project at The Gem Production.',
-      image: '/images/team-3.jpg'
+      name: 'Creative Team',
+      role: 'Producers & Session Musicians',
+      bio: 'Having worked on numerous successful projects, our creative team brings their expertise in creating polished, radio-ready productions to every project at The Gem Production.',
+      image: '/images/creative-team.png'
     },
     {
-      name: 'Olivia Rodriguez',
-      role: 'Mastering Engineer',
-      bio: 'Olivia\'s attention to detail and mastery of the subtle art of mastering ensures that every production leaves our studio sounding its absolute best across all playback systems.',
-      image: '/images/team-4.jpg'
+      name: 'Business Team',
+      role: 'Client Relations & Management',
+      bio: 'Our business team\'s attention to detail and dedication ensures that every client experience is smooth and productive, from initial contact through project completion.',
+      image: '/images/business-team.png'
     }
   ];
 
@@ -85,13 +85,13 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold mb-6">Our Story</h2>
               <div className="space-y-4 text-foreground/80">
                 <p>
-                  The Gem Production was founded in 2010 by Alex Johnson, a producer with a passion for helping artists realize their unique sound. What began as a small project studio in Alex's garage has evolved into a premier production facility known for its quality and creativity.
+                  Welcome to The Gem Productions! We're thrilled to have you onboard as our creative partner. With over 4+ years of dedicated experience in music production, mixing mastering, vocal recording, and lyrics writing, we're committed to bringing your artistic vision to life with unparalleled quality and creativity.
                 </p>
                 <p>
-                  Over the years, we've had the privilege of working with incredibly talented artists across all genres, from emerging independent musicians to established major label acts. Our philosophy has always been simple: treat every project with the same level of dedication and attention to detail, regardless of budget or scope.
+                  When you choose to work with us, you're not just getting a service provider; you're gaining a mentor for life. What does that mean? It means we're here to support you every step of the way, not just for this project, but for your entire journey as an artist. Whether you need advice on songwriting, guidance on production techniques, or simply someone to bounce ideas off of, we're here for you.
                 </p>
                 <p>
-                  Today, The Gem Production stands as a beacon for artists seeking a collaborative and supportive environment to create their best work. Our team of experienced professionals is committed to helping you polish your musical ideas into gems that shine.
+                  Our commitment to your success goes beyond the completion of any single project; it's a lifelong partnership built on trust, collaboration, and mutual respect.
                 </p>
               </div>
             </motion.div>
@@ -103,7 +103,7 @@ export default function AboutPage() {
               transition={{ duration: 0.7, delay: 0.2 }}
             >
               <div className="relative aspect-square rounded-2xl overflow-hidden border border-primary/20 shadow-xl shadow-primary/10">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/30 via-secondary/30 to-accent/30 flex items-center justify-center">
+                <div className="w-full h-full bg-gradient-to-br from-primary/30 via-secondary/30 to-accent/30 flex items-center justify-center">
                   <span className="text-6xl">🎵</span>
                 </div>
               </div>
@@ -146,39 +146,6 @@ export default function AboutPage() {
               ))}
             </div>
           </motion.div>
-          
-          <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            viewport={{ once: true, margin: "-100px" }}
-          >
-            <h2 className="text-3xl font-bold mb-10 text-center">Meet Our Team</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {teamMembers.map((member, index) => (
-                <motion.div 
-                  key={index}
-                  className="bg-background-light/30 rounded-2xl overflow-hidden border border-primary/10 flex flex-col md:flex-row"
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true, margin: "-100px" }}
-                  whileHover={{ y: -5, boxShadow: '0 10px 30px -10px rgba(138, 43, 226, 0.2)' }}
-                >
-                  <div className="md:w-1/3 aspect-square relative">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 flex items-center justify-center">
-                      <span className="text-4xl">👤</span>
-                    </div>
-                  </div>
-                  <div className="p-6 md:w-2/3">
-                    <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-                    <p className="text-primary mb-4">{member.role}</p>
-                    <p className="text-foreground/70 text-sm">{member.bio}</p>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
         </div>
       </section>
       
@@ -195,13 +162,14 @@ export default function AboutPage() {
             <p className="text-lg text-foreground/70 mb-8">
               Passionate about music production? We're always looking for talented individuals to join our growing team.
             </p>
-            <motion.button 
-              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto"
+            <motion.a 
+              href="/careers"
+              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
               View Careers
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>

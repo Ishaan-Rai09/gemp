@@ -105,13 +105,14 @@ export default function Hero() {
                 <FaPlay /> Listen Demo
               </motion.button>
               
-              <motion.button 
+              <motion.a 
+                href="/services"
                 className="px-8 py-3 bg-transparent border border-primary/50 hover:border-primary text-foreground rounded-full flex items-center justify-center gap-2 transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <FaHeadphones /> Our Services
-              </motion.button>
+              </motion.a>
             </div>
           </motion.div>
           

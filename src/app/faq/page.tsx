@@ -191,13 +191,14 @@ export default function FAQPage() {
             <p className="text-foreground/70 mb-6">
               If you couldn't find the answer to your question, feel free to reach out to us directly.
             </p>
-            <motion.button 
-              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto"
+            <motion.a 
+              href="/contact"
+              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
               Contact Us
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>

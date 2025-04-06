@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaUser, FaMusic, FaPaperPlane } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaUser, FaMusic, FaPaperPlane, FaInstagram, FaYoutube, FaSpotify, FaWhatsapp } from 'react-icons/fa';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -65,33 +65,29 @@ export default function ContactPage() {
       icon: <FaMapMarkerAlt />,
       title: 'Studio Location',
       details: [
-        '123 Music Avenue',
-        'Harmony District',
-        'Los Angeles, CA 90001'
+        'The Gem Production',
+        'Panchkula, Haryana, India'
       ]
     },
     {
       icon: <FaPhone />,
-      title: 'Phone',
+      title: 'Phone / WhatsApp',
       details: [
-        '+1 (555) 123-4567',
-        '+1 (555) 987-6543'
+        <a key="whatsapp" href="https://wa.me/919501678746" className="hover:text-primary transition-colors">+91 9501678746</a>
       ]
     },
     {
       icon: <FaEnvelope />,
       title: 'Email',
       details: [
-        'info@thegemproduction.com',
-        'booking@thegemproduction.com'
+        <a key="email" href="https://mail.google.com/mail/?view=cm&fs=1&to=itsthegemproductions@gmail.com" className="hover:text-primary transition-colors">itsthegemproductions@gmail.com</a>
       ]
     },
     {
       icon: <FaClock />,
       title: 'Studio Hours',
       details: [
-        'Monday - Friday: 10am - 10pm',
-        'Saturday: 12pm - 8pm',
+        'Monday - Saturday: 10am - 8pm',
         'Sunday: By appointment only'
       ]
     }
@@ -289,6 +285,29 @@ export default function ContactPage() {
               </div>
               
               <motion.div 
+                className="bg-background-light/30 rounded-2xl p-8 border border-primary/10 mb-6"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.6 }}
+              >
+                <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
+                <div className="flex flex-wrap gap-4 mt-4">
+                  <a href="https://www.instagram.com/thegem.productions?igsh=MWJreTk4ajlnNG5qNw==" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
+                    <FaInstagram />
+                  </a>
+                  <a href="https://youtube.com/@THEGEMPRODUCTIOS?si=leIMkP3KQ5u8LKQj" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
+                    <FaYoutube />
+                  </a>
+                  <a href="https://open.spotify.com/artist/6bvjcJzdo8UHV1vHOhBLot?si=A5Uyi1FeQViaxyJsdKm5RQ&pi=a-2D3YIyJfRYic" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
+                    <FaSpotify />
+                  </a>
+                  <a href="https://www.upwork.com/freelancers/~01208f3ce28cdf7d2c" target="_blank" rel="noopener noreferrer" className="bg-background/50 w-10 h-10 rounded-full flex items-center justify-center transition-colors duration-300 text-foreground/70 hover:text-primary">
+                    <span className="font-bold text-sm">Up</span>
+                  </a>
+                </div>
+              </motion.div>
+              
+              <motion.div 
                 className="bg-gradient-to-br from-primary/20 via-secondary/20 to-accent/20 rounded-2xl p-8 border border-primary/10"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -296,11 +315,17 @@ export default function ContactPage() {
               >
                 <h3 className="text-xl font-bold mb-4">Need Urgent Help?</h3>
                 <p className="text-foreground/70 mb-6">
-                  For urgent matters, please call our studio hotline directly.
+                  For urgent matters, please contact us via WhatsApp.
                 </p>
-                <div className="text-2xl font-bold gradient-text">
-                  +1 (555) 123-4567
-                </div>
+                <a 
+                  href="https://wa.me/919501678746" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-lg font-bold gradient-text flex items-center gap-2"
+                >
+                  <FaWhatsapp />
+                  +91 9501678746
+                </a>
               </motion.div>
             </motion.div>
           </div>

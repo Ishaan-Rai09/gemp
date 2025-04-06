@@ -22,93 +22,93 @@ export default function PortfolioPage() {
   const projects = [
     {
       id: 1,
-      title: 'Midnight Dreams',
-      artist: 'Luna Eclipse',
+      title: 'Studio Sessions',
+      artist: 'The Gem Production',
       category: 'production',
-      tags: ['Electronic', 'Ambient', 'Production'],
+      tags: ['Studio Setup', 'Production', 'Equipment'],
       year: '2023',
-      image: '/images/project1.jpg',
-      description: 'Full album production for Luna Eclipse\'s debut release. A blend of atmospheric electronic sounds with haunting vocals.'
+      image: '/images/portfolio/studio-yellow.jpg',
+      description: 'Our state-of-the-art studio setup featuring premium equipment for music production, mixing, and recording.'
     },
     {
       id: 2,
-      title: 'Rhythm & Soul',
-      artist: 'Marcus Jones',
-      category: 'mixing',
-      tags: ['R&B', 'Soul', 'Mixing'],
+      title: 'Artist Portraits',
+      artist: 'Shashank Kainth',
+      category: 'production',
+      tags: ['Artist', 'Portrait', 'Brand'],
       year: '2023',
-      image: '/images/project2.jpg',
-      description: 'Mixing and mastering services for Marcus Jones\' chart-topping R&B album, which reached #3 on the Billboard charts.'
+      image: '/images/portfolio/producer-black-jacket.jpg',
+      description: 'Professional artist portraits for Shashank Kainth (T REAL G), founder and lead producer at The Gem Production.'
     },
     {
       id: 3,
-      title: 'Electric Waves',
-      artist: 'Synthia',
-      category: 'production',
-      tags: ['Synthwave', 'Electronic', 'Production'],
-      year: '2022',
-      image: '/images/project3.jpg',
-      description: 'Complete production for Synthia\'s sophomore album, featuring vintage synthesizers and modern production techniques.'
+      title: 'Recording Sessions',
+      artist: 'Studio Work',
+      category: 'recording',
+      tags: ['Recording', 'Studio Work', 'Sessions'],
+      year: '2023',
+      image: '/images/portfolio/studio-recording.jpg',
+      description: 'Behind the scenes at our recording sessions, capturing the creative process of music production.'
     },
     {
       id: 4,
-      title: 'Mountain High',
-      artist: 'The Climbers',
-      category: 'recording',
-      tags: ['Folk', 'Acoustic', 'Recording'],
+      title: 'Performance',
+      artist: 'Live Events',
+      category: 'session',
+      tags: ['Performance', 'Live', 'Events'],
       year: '2023',
-      image: '/images/project4.jpg',
-      description: 'Live recording session for The Climbers\' unplugged album, capturing the authenticity of their acoustic performance.'
+      image: '/images/portfolio/performance.jpg',
+      description: 'Live performance and event production services, bringing music to life on stage.'
     },
     {
       id: 5,
-      title: 'Urban Stories',
-      artist: 'Street Poets Collective',
-      category: 'mixing',
-      tags: ['Hip Hop', 'Rap', 'Mixing'],
-      year: '2022',
-      image: '/images/project5.jpg',
-      description: 'Mixing and production assistance for this groundbreaking hip hop collective\'s debut album.'
+      title: 'Artist Development',
+      artist: 'Fashion & Style',
+      category: 'production',
+      tags: ['Fashion', 'Style', 'Branding'],
+      year: '2023',
+      image: '/images/portfolio/producer-white-shirt.jpg',
+      description: 'Complete artist development including style consulting and image development for music professionals.'
     },
     {
       id: 6,
-      title: 'Neon Lights',
-      artist: 'Glow',
-      category: 'video',
-      tags: ['Pop', 'Electronic', 'Music Video'],
+      title: 'Vocal Production',
+      artist: 'Recording Booth',
+      category: 'recording',
+      tags: ['Vocal', 'Recording', 'Booth'],
       year: '2023',
-      image: '/images/project6.jpg',
-      description: 'Music video production for Glow\'s hit single "Neon Lights", featuring cutting-edge visual effects and choreography.'
+      image: '/images/portfolio/vocal-booth.jpg',
+      description: 'Professional vocal recording services in our acoustically treated recording booth with top-tier microphones.'
     },
     {
       id: 7,
-      title: 'Strings Attached',
-      artist: 'Classical Reimagined',
-      category: 'session',
-      tags: ['Classical', 'Crossover', 'Session Work'],
-      year: '2022',
-      image: '/images/project7.jpg',
-      description: 'Session musician coordination and recording for this unique project blending classical compositions with modern elements.'
+      title: 'Music Production',
+      artist: 'Studio Setup',
+      category: 'production',
+      tags: ['Music', 'Production', 'Equipment'],
+      year: '2023',
+      image: '/images/portfolio/studio-main.jpg',
+      description: 'Full music production services combining cutting-edge technology with creative expertise.'
     },
     {
       id: 8,
-      title: 'Desert Wind',
-      artist: 'Sahara Sounds',
+      title: 'Brand Development',
+      artist: 'The Gem Production',
       category: 'production',
-      tags: ['World Music', 'Fusion', 'Production'],
+      tags: ['Brand', 'Logo', 'Identity'],
       year: '2023',
-      image: '/images/project8.jpg',
-      description: 'Full production services for this world music fusion album, incorporating traditional instruments with modern production.'
+      image: '/images/portfolio/producer-style.jpg',
+      description: 'Brand development and visual identity creation for music artists and producers.'
     },
     {
       id: 9,
-      title: 'Heavy Heart',
-      artist: 'Metal Militia',
+      title: 'Studio Environment',
+      artist: 'Production Space',
       category: 'recording',
-      tags: ['Metal', 'Rock', 'Recording'],
-      year: '2022',
-      image: '/images/project9.jpg',
-      description: 'Recording services for Metal Militia\'s powerful new album, capturing their high-energy performance and technical prowess.'
+      tags: ['Studio', 'Environment', 'Setup'],
+      year: '2023',
+      image: '/images/portfolio/studio-black.jpg',
+      description: 'Our carefully designed studio environment provides the perfect atmosphere for creative music production.'
     }
   ];
   
@@ -198,9 +198,12 @@ export default function PortfolioPage() {
                         className="absolute inset-0 bg-primary/40 opacity-0 flex items-center justify-center group-hover:opacity-100 transition-opacity duration-300"
                         whileHover={{ opacity: 1 }}
                       >
-                        <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center">
-                          <FaPlay className="text-primary ml-1" />
-                        </div>
+                        <motion.span 
+                          className="bg-white rounded-full w-12 h-12 flex items-center justify-center text-primary"
+                          whileHover={{ scale: 1.1 }}
+                        >
+                          <FaPlay />
+                        </motion.span>
                       </motion.div>
                     </div>
                   </div>
@@ -298,13 +301,14 @@ export default function PortfolioPage() {
                   >
                     Close
                   </motion.button>
-                  <motion.button 
+                  <motion.a 
+                    href="/contact"
                     className="px-6 py-2 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 flex items-center gap-2"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.98 }}
                   >
                     <FaPlay /> Listen
-                  </motion.button>
+                  </motion.a>
                 </div>
               </div>
             </motion.div>
@@ -325,13 +329,14 @@ export default function PortfolioPage() {
             <p className="text-lg text-foreground/70 mb-8">
               Let's collaborate and bring your musical vision to life with The Gem Production.
             </p>
-            <motion.button 
-              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto"
+            <motion.a 
+              href="/contact"
+              className="px-8 py-3 bg-primary hover:bg-primary/90 text-white rounded-full transition-all duration-300 mx-auto inline-block"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.98 }}
             >
               Start Your Project
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </section>

@@ -1,18 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSoundcloud } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaSpotify, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
   
   const socialLinks = [
-    { icon: <FaFacebookF />, href: '#', label: 'Facebook' },
-    { icon: <FaTwitter />, href: '#', label: 'Twitter' },
-    { icon: <FaInstagram />, href: '#', label: 'Instagram' },
-    { icon: <FaYoutube />, href: '#', label: 'YouTube' },
-    { icon: <FaSoundcloud />, href: '#', label: 'SoundCloud' },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/thegem.productions?igsh=MWJreTk4ajlnNG5qNw==", label: 'Instagram' },
+    { icon: <FaYoutube />, href: "https://youtube.com/@THEGEMPRODUCTIOS?si=leIMkP3KQ5u8LKQj", label: 'YouTube' },
+    { icon: <FaSpotify />, href: "https://open.spotify.com/artist/6bvjcJzdo8UHV1vHOhBLot?si=A5Uyi1FeQViaxyJsdKm5RQ&pi=a-2D3YIyJfRYic", label: 'Spotify' },
+    { icon: <FaWhatsapp />, href: "https://wa.me/919501678746", label: 'WhatsApp' },
+    { icon: <FaEnvelope />, href: "https://mail.google.com/mail/?view=cm&fs=1&to=itsthegemproductions@gmail.com", label: 'Email' },
   ];
   
   const footerLinks = [
